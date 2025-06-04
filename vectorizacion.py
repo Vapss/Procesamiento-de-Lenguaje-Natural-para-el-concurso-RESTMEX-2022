@@ -10,7 +10,7 @@ else:
 	corpus_file = open ('corpus_lematizado.pkl','rb')
 	corpus_lematizado = pickle.load(corpus_file)
  
-	corpuslower = [[word.lower() fpr word in text.split] for text in corpus_lematizado]
+        corpuslower = [[word.lower() for word in text.split()] for text in corpus_lematizado]
 
 #~ list_stop_words = ['aunque', 'atrás', 'con', 'de', 'el']
 
