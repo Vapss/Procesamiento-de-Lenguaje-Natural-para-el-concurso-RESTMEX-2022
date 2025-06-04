@@ -11,4 +11,4 @@ def test_vectorization_returns_arrays():
                        'Opinion': ['me gusto', 'no me gusto']})
     result = get_vectorized_dataframe_colums(df.copy(), ['Title'])
     value = result['Title'].iloc[0]
-    assert isinstance(value, (int, np.integer))
+    assert isinstance(value, np.ndarray)
