@@ -92,10 +92,10 @@ for i in range(polarity_dataset_kfold.n_fold):
     # print('Clase real{}\nClase predicha{}'.format(
     #     _y_test[0:10], y_pred[0:10]))
 
-accuracy_prom = np.sum(accuracy) / len(accuracy)
-precision_prom = np.sum(precision) / len(precision)
-recall_prom = np.sum(recall) / len(recall)
-f1_prom = np.sum(f1) / len(f1)
+accuracy_prom = np.mean(accuracy)
+precision_prom = np.mean(precision)
+recall_prom = np.mean(recall)
+f1_prom = np.mean(f1)
 print("Accuracy promedio: {}".format(accuracy_prom))
 print("Precision promedio: {}".format(precision_prom))
 print("Recall promedio: {}".format(recall_prom))
